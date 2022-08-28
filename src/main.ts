@@ -1,10 +1,6 @@
 import './style.css'
-import typescriptLogo from './typescript.svg'
-import { setupCounter } from './counter'
-import { main } from './02-mini-max-sum/problem';
+import { main } from './04-breaking-the-records/problem';
 
-//main();
-main();
 const app = document.querySelector<HTMLDivElement>("#app")!;
 
 
@@ -16,3 +12,4 @@ app.innerHTML = `
   </div>
 `;
 
+main();

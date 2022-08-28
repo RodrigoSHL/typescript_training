@@ -1,27 +1,5 @@
 'use strict';
 
-import { WriteStream, createWriteStream } from "fs";
-process.stdin.resume();
-process.stdin.setEncoding('utf-8');
-
-let inputString: string = '';
-let inputLines: string[] = [];
-let currentLine: number = 0;
-
-process.stdin.on('data', function (inputStdin: string): void {
-    inputString += inputStdin;
-});
-
-process.stdin.on('end', function (): void {
-    inputLines = inputString.split('\n');
-    inputString = '';
-
-    main();
-});
-
-function readLine(): string {
-    return inputLines[currentLine++];
-}
 
 /*
  * Complete the 'timeConversion' function below.
@@ -42,14 +20,8 @@ function timeConversion(s: string): string {
 }
 
 export function main() {
-    //const ws: WriteStream = createWriteStream(process.env['OUTPUT_PATH']);
-    const ws: WriteStream = createWriteStream('');
-
-    const s: string = readLine();
+    const s: string = '07:05:45PM';
 
     const result: string = timeConversion(s);
-
-    ws.write(result + '\n');
-
-    ws.end();
+    return console.log(result);
 }
