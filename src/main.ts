@@ -1,5 +1,5 @@
 import './style.css'
-import { main } from './04-breaking-the-records/problem';
+import { main } from './05-camel-case-4/problem';
 
 const app = document.querySelector<HTMLDivElement>("#app")!;
 
