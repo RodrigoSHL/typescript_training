@@ -81,3 +81,38 @@ function camelize(str: string) {
     })
     .replace(/\s+/g, "");
 }
+
+
+
+/*
+   let inputValue:any = readLine();
+
+    while (inputValue != null) {
+        let operation:string = inputValue.slice(0,1);
+        let typeOp:string = inputValue.slice(2,3);
+        let outputString:string = "";
+        inputValue = inputValue.slice(4);
+
+        if (operation=="S") {
+            if ( typeOp == "M") {inputValue = inputValue.slice(0,-2);}
+            outputString = inputValue
+            .split(/(?=[A-Z])/)
+            .map((i:any) => i.toLowerCase())
+            .join(" ");
+
+        } else if(operation == "C") {
+            outputString = inputValue
+            .split(" ")
+            .map((i:any) => i.charAt(0).toUpperCase() + i.slice(1))
+            .join("");
+            if (typeOp == "V") {
+                outputString = outputString.charAt(0).toLowerCase() + outputString.slice(1);
+            } else if (typeOp == "M") {
+                outputString = outputString.charAt(0).toLowerCase() + outputString.slice(1);
+                outputString += "()";
+            }
+
+        }
+        console.log(outputString);
+        inputValue = readLine();
+    }*/

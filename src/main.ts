@@ -1,5 +1,5 @@
 import './style.css'
-import { main } from './05-camel-case-4/problem';
+import { main } from './Kangooro/problem';
 
 const app = document.querySelector<HTMLDivElement>("#app")!;
 
